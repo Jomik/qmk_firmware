@@ -39,9 +39,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  //|--------+--------+--------+--------+--------+--------|                                      |--------+--------+--------+--------+--------+--------|
       KC_ESC,   GUI_A,   ALT_R,  CTRL_S,  SHFT_T,    KC_G,                                           KC_M,  SHFT_N,  CTRL_E,   ALT_I,   GUI_O, KC_SCLN,\
  //|--------+--------+--------+--------+--------+--------+-----------------.  ,-----------------+--------+--------+--------+--------+--------+--------|
-     KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_D,    KC_V, _______, _______,    KC_BTN1, KC_BTN2,    KC_K,    KC_H, KC_COMM, AGR_DOT, KC_SLSH, SFT_ENT,\
+     KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_D,    KC_V, XXXXXXX, XXXXXXX,    KC_BTN1, KC_BTN2,    KC_K,    KC_H, KC_COMM, AGR_DOT, KC_SLSH, SFT_ENT,\
  //`--------------------------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------------------------'
-                                KC_MUTE, _______, MED_ESC, NAV_SPC, MOS_TAB,    SYM_ENT, NUM_BSC,  FN_DEL, _______, KC_ESC \
+                                KC_MUTE, XXXXXXX, MED_ESC, NAV_SPC, MOS_TAB,    SYM_ENT, NUM_BSC,  FN_DEL, XXXXXXX, KC_ESC \
                             //`--------------------------------------------'  `--------------------------------------------'
     ),
 
@@ -51,9 +51,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  //|--------+--------+--------+--------+--------+--------|                                      |--------+--------+--------+--------+--------+--------|
       KC_ESC,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                                           KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN, KC_QUOT,\
  //|--------+--------+--------+--------+--------+--------+-----------------.  ,-----------------+--------+--------+--------+--------+--------+--------|
-     KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, KC_LCTL, _______,    _______, _______,    KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SCLN, SFT_ENT,\
+     KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, KC_LCTL, XXXXXXX,    XXXXXXX, XXXXXXX,    KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SCLN, SFT_ENT,\
  //`--------------------------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------------------------'
-                                _______, KC_LALT, MED_ESC,  KC_SPC, NAV_SPC,    SYM_ENT, NUM_BSC,  FN_DEL, _______, _______ \
+                                XXXXXXX, KC_LALT, MED_ESC,  KC_SPC, NAV_SPC,    SYM_ENT, NUM_BSC,  FN_DEL, XXXXXXX, XXXXXXX \
                             //`--------------------------------------------'  `--------------------------------------------'
     ),
 
