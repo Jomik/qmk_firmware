@@ -1,0 +1,7 @@
+OLED_DRIVER_ENABLE = yes
+RGBLIGHT_ENABLE = yes
+WPM_ENABLE = yes
+
+# Miryoku
+USER_NAME := manna-harbour_miryoku
+MIRYOKU_ALPHAS = COLEMAK
