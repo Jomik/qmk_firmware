@@ -5,3 +5,4 @@ WPM_ENABLE = yes
 # Miryoku
 USER_NAME := manna-harbour_miryoku
 MIRYOKU_ALPHAS = COLEMAK
+MIRYOKU_MAPPING = EXTENDED_THUMBS
