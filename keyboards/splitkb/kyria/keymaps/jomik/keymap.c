@@ -3,7 +3,7 @@
 #include QMK_KEYBOARD_H
 #include "manna-harbour_miryoku.h"
 
-#ifdef OLED_DRIVER_ENABLE
+#ifdef OLED_ENABLE
 
 oled_rotation_t oled_init_user(oled_rotation_t rotation) {
     return OLED_ROTATION_180;
@@ -74,24 +74,6 @@ char wpm_str[10];
 void oled_task_user(void) {
     if (is_keyboard_master()) {
         render_status();
-    } else {
-        uint8_t n = get_current_wpm();
-        char wpm_counter[4];
-        wpm_counter[3] = '\0';
-        wpm_counter[2] = '0' + n % 10;
-        wpm_counter[1] = ( n /= 10) % 10 ? '0' + (n) % 10 : (n / 10) % 10 ? '0' : ' ';
-        wpm_counter[0] = n / 10 ? '0' + n / 10 : ' ';
-        oled_set_cursor(0,6);
-        oled_write("       WPM:", false);
-        if (wpm_counter[0]==' ') {
-            if (wpm_counter[1]==' ') {
-                oled_write(&wpm_counter[2], false);
-            } else {
-                oled_write(&wpm_counter[1], false);
-            }
-        } else {
-            oled_write(&wpm_counter[0], false);
-        }
     }
 }
 #endif
