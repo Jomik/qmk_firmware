@@ -8,6 +8,8 @@
 #include "miryoku_babel/miryoku_layer_names.h"
 #include "miryoku_babel/miryoku_layer.h"
 
+enum layers { MIRYOKU_LAYER_NAMES };
+
 #define U_MACRO_VA_ARGS(macro, ...) macro(__VA_ARGS__)
 
 #define U_NP KC_NO // key is not present

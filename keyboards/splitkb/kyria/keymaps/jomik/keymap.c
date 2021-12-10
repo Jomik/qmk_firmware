@@ -38,25 +38,25 @@ static void render_status(void) {
     // Host Keyboard Layer Status
     oled_write_P(PSTR("Layer: "), false);
     switch (get_highest_layer(layer_state)) {
-        case 0:
+        case BASE:
             oled_write_P(PSTR("Default\n"), false);
             break;
-        case 4:
+        case MEDIA:
             oled_write_P(PSTR("Media\n"), false);
             break;
-        case 2:
+        case NAV:
             oled_write_P(PSTR("Navigation\n"), false);
             break;
-        case 3:
+        case MOUSE:
             oled_write_P(PSTR("Mouse\n"), false);
             break;
-        case 6:
+        case SYM:
             oled_write_P(PSTR("Symbol\n"), false);
             break;
-        case 5:
+        case NUM:
             oled_write_P(PSTR("Number\n"), false);
             break;
-        case 7:
+        case FUN:
             oled_write_P(PSTR("Fn\n"), false);
             break;
        default:
